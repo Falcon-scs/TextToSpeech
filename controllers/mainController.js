@@ -31,7 +31,7 @@ class mainController {
                     res.json({ status: false, message: error })
                 }
                 textToSpeech.repairWavHeader(audio);
-                let filename = 'audio_' + Date.now() + '.wav'
+                let filename = 'audio_' + Date.now() + '.mp3'
                 fs.writeFileSync('public/audio/' + filename, audio);
                 res.json({ status: true, filename: filename })
             });

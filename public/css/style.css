@@ -9,6 +9,7 @@
 textarea {
   width: 100%;
   min-height: 150px;
+  margin-top: 20px;
 }
 
 #start {
@@ -17,6 +18,11 @@ textarea {
   border-color: #ccc;
   margin-top: 30px;
   padding: 6px 10px;
+}
+
+.description {
+  font-size: 18px;
+  padding-left: 10px;
 }
 
 .line {
@@ -44,4 +50,11 @@ audio {
 
 .error {
   color: red;
+}
+
+.guide{
+  padding: 20px;
+  font-size: 20px;
+  color: #2c78ff;
+  text-decoration: none;
 }

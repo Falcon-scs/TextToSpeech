@@ -44,7 +44,7 @@ function analyze_data(blob) {
 
     myReader.addEventListener("loadend", function (e) {
         var buffer = e.srcElement.result;
-        var blob = new Blob([buffer], { type: 'audio/wav' });
+        var blob = new Blob([buffer], { type: 'audio/mp3' });
         var blobUrl = URL.createObjectURL(blob);
         $('#audioDiv').removeClass('hide');
         $('#audio').attr('src', blobUrl);
