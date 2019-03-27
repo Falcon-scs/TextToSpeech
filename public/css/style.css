@@ -54,11 +54,11 @@ audio {
 
 a.guide{
   padding: 20px 0px;
-  font-size: 20px;
+  font-size: 18px;
   color: #2c78ff;
   text-decoration: none;
 }
 p.guide {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 18px;
+  padding-left: 10px;
 }
