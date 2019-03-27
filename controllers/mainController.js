@@ -17,7 +17,7 @@ class mainController {
 
     uploadText(req, res) {
         let text = req.body.text
-        text = '<voice-transformation type="Custom" pitch_range="100%" rate="slow">' + text + '</voice-transformation>'
+        text = '<voice-transformation type="Custom" pitch_range="100%" rate="-100%">' + text + '</voice-transformation>'
         var synthesizeParams = {
             text: text,
             accept: 'audio/wav',
