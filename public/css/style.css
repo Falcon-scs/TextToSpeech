@@ -52,9 +52,13 @@ audio {
   color: red;
 }
 
-.guide{
-  padding: 20px;
+a.guide{
+  padding: 20px 0px;
   font-size: 20px;
   color: #2c78ff;
   text-decoration: none;
+}
+p.guide {
+  font-size: 20px;
+  padding-left: 20px;
 }
