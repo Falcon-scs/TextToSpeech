@@ -2,7 +2,7 @@ var TextToSpeechV1 = require('watson-developer-cloud/text-to-speech/v1');
 var fs = require('fs');
 
 var textToSpeech = new TextToSpeechV1({
-    iam_apikey: '4Jxvz6lErmt4y_Zup_N4xlQrpgBOjdXqjDyun0YuSQI3',
+    iam_apikey: 'xKzGTa1Vy1xJsGS7GmsZQ-CV-ZXqB1AmJq8m__fZNYWu',
     url: 'https://stream.watsonplatform.net/text-to-speech/api'
 });
 
