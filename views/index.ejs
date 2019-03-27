@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Text to Speech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Eva Text to Speech App</h1>
+    <p>Welcome to Eva Text to Speech App for recording all your Subliminal scripts.</p>
+    <textarea name="text" id="text"></textarea>
+    <button id="start">Speack</button>
+    <hr class="line">
+    <div id="loading" class="hide">
+      <img src="img/loading.gif" alt="" class="loading-img">
+    </div>
+    <div class="hide" id="audioDiv">
+      <audio autoplay="" id="audio" class="audio " controls="" src=""
+        type="audio/wav;codecs=opus">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="hide error" id="error">
+      <p>Cannot convet to speech</p>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
