@@ -2,9 +2,9 @@
   max-width: 800px;
   margin: auto;
   width: 90%;
-  border: solid 1px #ccc;
+  border: solid 1px #22222280;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 textarea {
   width: 100%;
@@ -14,8 +14,8 @@ textarea {
 
 #start {
   border-radius: 15px;
-  background-color: white;
-  border-color: #ccc;
+  background-color: #eee;
+  border-color: #8f8a8a;
   margin-top: 30px;
   padding: 6px 10px;
 }
@@ -55,7 +55,7 @@ audio {
 a.guide{
   padding: 20px 0px;
   font-size: 18px;
-  color: #2c78ff;
+  color: #428bca;
   text-decoration: none;
 }
 p.guide {
