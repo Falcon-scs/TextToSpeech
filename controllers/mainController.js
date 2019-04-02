@@ -17,10 +17,10 @@ class mainController {
 
     uploadText(req, res) {
         let text = req.body.text
-        text = '<voice-transformation type="Custom" pitch_range="100%" rate="-60%">' + text + '</voice-transformation>'
+        text = '<voice-transformation type="Custom" rate="-100%">' + text + '</voice-transformation>'
         var synthesizeParams = {
             text: text,
-            accept: 'audio/wav',
+            accept: 'audio/mp3',
             voice: 'en-US_LisaVoice'
         };
 
@@ -28,9 +28,9 @@ class mainController {
             .synthesize(synthesizeParams, function (err, audio) {
                 if (err) {
                     console.log(err);
-                    res.json({ status: false, message: error })
+                    res.json({ status: false, message: err })
                 }
-                textToSpeech.repairWavHeader(audio);
+                // textToSpeech.repairWavHeader(audio);
                 let filename = 'audio_' + Date.now() + '.mp3'
                 fs.writeFileSync('public/audio/' + filename, audio);
                 res.json({ status: true, filename: filename })
